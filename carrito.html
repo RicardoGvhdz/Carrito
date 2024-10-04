@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Stylecar.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="scripts.js" defer></script>
+    <title>Carrito de Compras</title>
+</head>
+<body>
+    <header>
+        <div class="top-section">
+            <div class="logo">
+                <img src="Logo.png" alt="Panam Logo">
+            </div>
+            <div class="search-menu-container"><br>
+                <div class="search-bar">
+                    <img class="buscar" src="search.png" alt="Busqueda">
+                </div>
+                <br>
+                <nav class="menu">
+                    <a href="#" class="menu-item">Tenis</a>
+                    <a href="#" class="menu-item">Descuentos</a>
+                    <a href="#" class="menu-item">Ropa</a>
+                    <a href="#" class="menu-item">Accesorios</a>
+                </nav>
+            </div>
+            <div class="cart-icon">
+                <img src="Carrito.png" alt="Carrito de Compras">
+            </div>
+        </div>
+    </header>
+    
+    <hr class="separador">
+    
+    <main>
+        <div class="product-card">
+            <div class="product-image">
+                <img src="TenisB.png" alt="Bota Coyote Mezclilla Negro">
+            </div>
+            <div class="product-info">
+                <h2>PANAM Bota Coyote Mezclilla Negro</h2>
+               
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" value="2" min="1">
+                <label for="talla">Talla:</label>
+                <select id="talla">
+                    <option value="27" selected>27</option>
+                    <!-- Otras tallas -->
+                </select>
+                <br><br>
+                <p><strong>$870.00</strong></p>
+            </div>
+        </div>
+
+        <div class="total-section">
+            <div class="coupon-box">
+                <label for="cupon">Ingresar cupón:</label>
+                <input type="text" id="cupon">
+            </div>
+            <div class="price-box">
+                <p>Total: <br><span id="total">$1740</span></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <div class="social-media">
+                <img src="facebook.png" alt="Facebook Logo" class="social-icon">
+                <img src="instagram.png" alt="Instagram Logo" class="social-icon">
+                <span>¡Síguenos!</span>
+            </div>
+        </div>
+        <div class="footer-right">
+            <span>Conócenos</span>
+        </div>
+    </footer>
+</body>
+</html>
